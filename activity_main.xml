@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/Text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:inputType="textPersonName"
+        android:text="Text"
+        app:layout_constraintBottom_toTopOf="@+id/rb1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.785"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <RadioGroup
+        android:id="@+id/Group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/rb1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="green"
+        app:layout_constraintBottom_toTopOf="@+id/rb2"
+        app:layout_constraintStart_toStartOf="@+id/Text1"
+        app:layout_constraintTop_toBottomOf="@+id/Text1" />
+
+    <RadioButton
+        android:id="@+id/rb2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Red"
+        app:layout_constraintBottom_toTopOf="@+id/rb3"
+        app:layout_constraintStart_toStartOf="@+id/rb1"
+        app:layout_constraintTop_toBottomOf="@+id/rb1" />
+
+    <RadioButton
+        android:id="@+id/rb3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rb2"
+        app:layout_constraintTop_toBottomOf="@+id/rb2" />
+
+    <Button
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="true"
+        android:text="OK"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/Text1"
+        app:layout_constraintTop_toBottomOf="@id/Text1" />
+
+    <ImageButton
+        android:id="@+id/rasim"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/img_20200321_090222_359"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ToggleButton
+        android:id="@+id/tgb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ToggleButton"
+        android:textOff="Rasmni yashirish"
+        android:textOn="Rasmni korsatish" />
+
+</LinearLayout>
